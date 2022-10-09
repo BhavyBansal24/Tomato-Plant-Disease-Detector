@@ -5,12 +5,12 @@
 ## How to use Tomato-Plant-Disease-Detector web-app:
 * Click [here]()
 * Select type of Input ['Upload Image', 'Live Camera']
-![alt text](https://github.com/BhavyBansal24/Tomato-Plant-Disease-Detector/blob/master/extras/selectType.jpeg?raw=true)
+![](https://github.com/BhavyBansal24/Tomato-Plant-Disease-Detector/blob/master/extras/selectType.jpeg?raw=true)
 ## Upload Image
 * Click on Browse files & Upload a Image file, Model will classify your uploaded Image from the known tomato disease classes.
-![.wav image](https://github.com/BhavyBansal24/Tomato-Plant-Disease-Detector/blob/master/extras/UploadIMG.jpeg?raw=true)
+![](https://github.com/BhavyBansal24/Tomato-Plant-Disease-Detector/blob/master/extras/UploadIMG.jpeg?raw=true)
 * After uploading completes, you can see the prediction on right side as shown below
-![prediction](https://github.com/BhavyBansal24/Tomato-Plant-Disease-Detector/blob/master/extras/predictionIMG.jpeg?raw=true)
+![](https://github.com/BhavyBansal24/Tomato-Plant-Disease-Detector/blob/master/extras/predictionIMG.jpeg?raw=true)
 * Similarly, you can use Live Camera and get predictions
 ********************************************************
 ## Model Details :
