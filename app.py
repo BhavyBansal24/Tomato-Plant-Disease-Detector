@@ -33,13 +33,16 @@ if selectbox == 'Live Camera':
     if Start_camera is True:
         st.title("Start Camera")
         FRAME_WINDOW = st.image([])
-        FRAME_WINDOW1 = st.success(["Starting Video"])
+        FRAME_WINDOW1 = st.success("Starting Video Stream")
         camera = cv2.VideoCapture(0)
         while True:
             _, frame = camera.read()
-            frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-            FRAME_WINDOW.image(frame)
-            # prediction
-            output = helper.prediction(frame)
-            str_out = 'prediction : ' + str(output[0])
-            FRAME_WINDOW1.success(str_out)
+            if(frame is not None):
+                frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+                FRAME_WINDOW.image(frame)
+                # prediction
+                output = helper.prediction(frame)
+                str_out = 'prediction : ' + str(output[0])
+                FRAME_WINDOW1.success(str_out)
+            else:
+                FRAME_WINDOW1.error("Camera not found")
