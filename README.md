@@ -1,17 +1,52 @@
 # Tomato-Plant-Disease-Detector
-![](https://github.com/BhavyBansal24/Tomato-Plant-Disease-Detector/blob/master/extras/dataset.jpeg?raw=true)
-#### Project is live at : [Tomato-Plant-Disease-Detector]()
+![](https://github.com/BhavyBansal24/Tomato-Plant-Disease-Detector/blob/master/extras/dataset.jpg?raw=true)
+### Project is live at : [Tomato-Plant-Disease-Detector](https://bhavybansal24-tomato-plant-disease-detector-app-jo66w9.streamlitapp.com/)
+
+## Quick Offline Setup :
+* Clone this repo
+* Open cmd in Clone folder
+* Create a conda environment on your device using commands below on cmd,
+  ```
+  conda create -n test_env python=3.9
+  conda activate test_env
+  ```
+* Install require libraries
+  ```
+  pip install requirements.txt
+  ```
+* Run the application
+  ```
+  streamlit run app.py
+  ```
 
 ## How to use Tomato-Plant-Disease-Detector web-app:
-* Click [here]()
-* Select type of Input ['Upload Image', 'Live Camera']
+* Click [here](https://bhavybansal24-tomato-plant-disease-detector-app-jo66w9.streamlitapp.com/)
+* Select type of Input ['Upload Image', 'Take A Shot', 'Live Camera (Experimental)']
 ![](https://github.com/BhavyBansal24/Tomato-Plant-Disease-Detector/blob/master/extras/selectType.jpeg?raw=true)
 ## Upload Image
 * Click on Browse files & Upload a Image file, Model will classify your uploaded Image from the known tomato disease classes.
 ![](https://github.com/BhavyBansal24/Tomato-Plant-Disease-Detector/blob/master/extras/UploadIMG.jpeg?raw=true)
 * After uploading completes, you can see the prediction on right side as shown below
 ![](https://github.com/BhavyBansal24/Tomato-Plant-Disease-Detector/blob/master/extras/predictionIMG.jpeg?raw=true)
-* Similarly, you can use Live Camera and get predictions
+********************************************************
+## Take A Shot
+* Take a shot of the tomato plant leaf by clicking **Take Photo** on right side of the application.
+********************************************************
+## Live Camera (Experimental)
+* As of now Streamlit is not supporting to use camera directly from API.
+* Here is an way to access the Live Camera feature on your offline device :
+  - Clone this repo
+  - Open cmd in Clone folder
+  - Create a conda environment on your device using commands below on cmd,
+  ```
+  conda create -n test_env python=3.9
+  conda activate test_env
+  pip install requirements.txt
+  streamlit run app.py
+  ```
+  - Note : you may be asked for Email to start streamlit (proceed anyways)
+  - It will redirect you to your default browser and open application offline
+  - here you may use the Live Camera (Experimental) feature without any error.
 ********************************************************
 ## Model Details :
 * Sequential model
