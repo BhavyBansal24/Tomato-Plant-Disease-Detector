@@ -2,7 +2,6 @@ import streamlit as st
 import numpy as np
 import helper
 import cv2
-import webbrowser
 from sklearn.preprocessing import LabelEncoder
 le = LabelEncoder()
 
@@ -62,5 +61,3 @@ if selectbox == 'Live Camera (Experimental)':
                 FRAME_WINDOW1.error("Camera Not Found ; Check Out [here](https://github.com/BhavyBansal24/Tomato-Plant-Disease-Detector#how-to-use-tomato-plant-disease-detector-web-app) for more info")
     else:
         st.sidebar.markdown("Please check the checkbox to start the camera")
-if st.sidebar.button("Github", key="github", help="Click to visit the Github repository"):
-    webbrowser.open('https://github.com/BhavyBansal24/Tomato-Plant-Disease-Detector')
