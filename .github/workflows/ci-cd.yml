@@ -3,12 +3,12 @@ name: CI/CD
 on:
   push:
     branches:
-      - master  # Adjust the branch name as per your project's default branch
+      - master  
   pull_request:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest  # You can choose a different OS if needed
+    runs-on: ubuntu-latest  # we can choose a different OS if needed
 
     steps:
       - name: Checkout repository
