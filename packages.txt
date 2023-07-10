@@ -1,2 +1,5 @@
 freeglut3-dev
 libgtk2.0-dev
+ffmpeg
+libsm6
+libxext6
