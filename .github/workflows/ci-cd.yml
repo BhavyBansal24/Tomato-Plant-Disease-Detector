@@ -1,0 +1,29 @@
+name: CI/CD
+
+on:
+  push:
+    branches:
+      - master  # Adjust the branch name as per your project's default branch
+  pull_request:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest  # You can choose a different OS if needed
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+      - name: Install dependencies
+        run: pip install --upgrade pip && pip install -r requirements.txt
+
+      - name: Build Docker image
+        run: docker build -t tomato_app .
+
+      - name: Run Docker container
+        run: docker run -dp 8501:8501 --name Tomantina tomato_app
