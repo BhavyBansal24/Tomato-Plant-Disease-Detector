@@ -2,7 +2,7 @@
 
 ![](https://github.com/BhavyBansal24/Tomato-Plant-Disease-Detector/blob/master/extras/dataset.jpg?raw=true)
 
-### Project is live at : [Tomato-Plant-Disease-Detector](https://bhavybansal24-tomato-plant-disease-detector-app-jo66w9.streamlitapp.com/)
+### Project is live at : [Tomato-Plant-Disease-Detector](https://tomato-plant.streamlit.app/)
 
 ## Quick Offline Setup :
 
@@ -36,7 +36,7 @@
 
 ## How to use Tomato-Plant-Disease-Detector web-app:
 
-- Click [here](https://bhavybansal24-tomato-plant-disease-detector-app-jo66w9.streamlitapp.com/)
+- Click [here](https://tomato-plant.streamlit.app/)
 - Select type of Input ['Upload Image', 'Take A Shot', 'Live Camera (Experimental)']
   ![](https://github.com/BhavyBansal24/Tomato-Plant-Disease-Detector/blob/master/extras/selectType.jpeg?raw=true)
 
